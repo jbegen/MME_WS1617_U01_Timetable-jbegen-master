@@ -23,20 +23,15 @@ Timetable.TimetableView = function(timetableEl) {
   		for (var j = courseList[i].slots.length - 1; j >= 0; j--) {
   			var daySel = courseList[i].slots[j].day;
   			var dayElements = timetableEl.getElementsByClassName("day-column");
-  			console.log("looking at slot "+j);
 
   			//iterate through all Days
   			for (var k = dayElements.length - 1; k >= 0; k--) {
-  				console.log("going thr dayElements");
   				if(dayElements[k].getAttribute("data-day-of-week")==courseList[i].slots[j].day){
-  					console.log("matched day");
   					var hourElements = dayElements[k].getElementsByClassName("day-column-empty");
 
   					//iterate through all Hours
   					for (var l = hourElements.length - 1; l >= 0; l--) {
-  						if (hourElements[l].getAttribute("data-hour-of-day")==courseList[i].slots[j].hour){
-  							console.log("rendered"+ courseList[i].shortTitle + " on " + courseList[i].slots[j].day + " at " + courseList[i].slots[j].hour);
-  							
+  						if (hourElements[l].getAttribute("data-hour-of-day")==courseList[i].slots[j].hour){ 				
   							hourElements[l].children[0].innerHTML = courseList[i].shortTitle;
   							hourElements[l].children[1].innerHTML = courseList[i].slots[j].room;
   							hourElements[l].className = "day-column-content color-" + courseList[i].color;
@@ -62,7 +57,6 @@ Timetable.TimetableView = function(timetableEl) {
 
   			if(lastSlot!=null){
   				if(thisSlot.children[0].innerHTML == lastSlot.children[0].innerHTML && thisSlot.children[0].innerHTML != "" && thisSlot.children[0].innerHTML != null){
-  					 console.log(lastSlot.className);
 
   					if(!thisSlot.className.match("course-end")&&!thisSlot.className.match("course-start")){
   						thisSlot.className = thisSlot.className + " course-end";
@@ -70,8 +64,7 @@ Timetable.TimetableView = function(timetableEl) {
   					}
   					if(!lastSlot.className.match("course-start")&&!lastSlot.className.match("course-end")){
   						lastSlot.className = lastSlot.className + " course-start";
-  						lastSlot.children[1].innerHTML = "";	
-  						console.log(lastSlot.className);
+  						lastSlot.children[1].innerHTML = "";
   					}
   					
   				

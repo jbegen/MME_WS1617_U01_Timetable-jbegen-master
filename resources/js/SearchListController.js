@@ -23,13 +23,11 @@ Timetable.SearchListController = function(inputEl, resultEl) {
     onSearchResultSelected;
 
   function onInputChanged(event) {
-    console.log(inputEl.value);
     var inpString = inputEl.value;
     onSearchInputChanged(inpString);
   }
 
   function onSearchResultListClicked(event) {
-    console.log(event.target.innerText);
     var selString = event.target.innerText;
     onSearchResultSelected(selString);
   }

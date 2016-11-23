@@ -79,11 +79,7 @@ var Timetable = function() {
       searchOutput = document.querySelector(".course-search-result-list"),
       timetable = document.querySelector(".timetable");
 
-    /*
-     * Debug-Ausgabe: Vor Abgabe bitte entfernen.
-     * Ausgabe der Kursliste auf der Konsole.
-     */
-    console.log(data);
+  
 
     /* 
      * Initalisierung des Models mit der geladenen Kursliste 
