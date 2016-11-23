@@ -1,0 +1,94 @@
+{
+	"description": "Course list for Medieninformatik and Informationswissenschaft",
+	"version": "1.0",
+	"lastUpdate": "08-11-2016",
+	"courses": [{
+		"title": "Objektorientierte Programmierung mit Java",
+		"shortTitle": "OOP",
+		"slots": [{
+			"day": "tu",
+			"hour": 12,
+			"room": "H24"
+		},
+		{
+			"day": "tu",
+			"hour": 13,
+			"room": "H24"
+		}],
+		"color": "green"
+	},{
+		"title": "Einführung in die Medieninformatik",
+		"shortTitle": "EIMI",
+		"slots": [{
+			"day": "tu",
+			"hour": 8,
+			"room": "H17"
+		},
+		{
+			"day": "tu",
+			"hour": 9,
+			"room": "H17"
+		},{
+			"day": "we",
+			"hour": 10,
+			"room": "H24"
+		},
+		{
+			"day": "we",
+			"hour": 11,
+			"room": "H24"
+		}],
+		"color": "blue"
+	},{
+		"title": "Mathematik für Medieninformatiker 1",
+		"shortTitle": "Mathe 1",
+		"slots": [{
+			"day": "th",
+			"hour": 8,
+			"room": "H2"
+		},
+		{
+			"day": "th",
+			"hour": 9,
+			"room": "H2"
+		}],
+		"color": "gold"
+	},{
+		"title": "Multimedia Technology",
+		"shortTitle": "MMT",
+		"slots": [{
+			"day": "th",
+			"hour": 12,
+			"room": "H4"
+		},
+		{
+			"day": "th",
+			"hour": 13,
+			"room": "H4"
+		}],
+		"color": "orange"
+	},{
+		"title": "Usability Engineering",
+		"shortTitle": "UE",
+		"slots": [{
+			"day": "tu",
+			"hour": 10,
+			"room": "CH 33.1.89"
+		},
+		{
+			"day": "tu",
+			"hour": 11,
+			"room": "CH 33.1.89"
+		},{
+			"day": "fr",
+			"hour": 14,
+			"room": "H42"
+		},
+		{
+			"day": "fr",
+			"hour": 15,
+			"room": "H42"
+		}],
+		"color": "purple"
+	}]
+}
